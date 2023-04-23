@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-function Card() {
+function Card({}) {
   return (
-    <div class="max-w-sm rounded overflow-hidden shadow-lg mr-3">
+    <div className="max-w-xs rounded overflow-hidden shadow-lg mr-3 ml-3 mb-6 w-15">
       <img
         class="w-full"
         src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
@@ -19,15 +19,9 @@ function Card() {
         </p>
       </div>
       <div class="px-6 pt-4 pb-2">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-          #photography
-        </span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-          #travel
-        </span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-          #winter
-        </span>
+        <a href="" className="">
+          Website
+        </a>
       </div>
     </div>
   );

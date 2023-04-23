@@ -19,4 +19,11 @@
 body {
   color: black;
   background: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg);
+}
+
+* {
 }
