@@ -1,4 +1,4 @@
-export const contractAddress = "0xfC39620cf296A2dAee3b59A9551B2E6625009825";
+export const contractAddress = "0x4815307729E58511815a3957245755c733013DE5";
 
 export const ABI = [
   {
@@ -300,9 +300,9 @@ export const ABI = [
     name: "checkWhiteList",
     outputs: [
       {
-        internalType: "uint256",
+        internalType: "bool",
         name: "",
-        type: "uint256",
+        type: "bool",
       },
     ],
     stateMutability: "view",
