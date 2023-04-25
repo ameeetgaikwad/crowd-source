@@ -41,7 +41,6 @@ function Mint({ PRIVATE_KEY, URL }) {
           setNotWhiteListed(true);
         }
         setLoading(false);
-        console.log(isWhiteListed);
       } else {
         alert("Connect your wallet to Polygon Mumbai");
       }

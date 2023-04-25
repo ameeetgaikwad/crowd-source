@@ -1,28 +1,27 @@
 import Image from "next/image";
 import React from "react";
 
-function Card({}) {
+function Card({ record }) {
+  const srt = "alsdf";
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg mr-3 ml-3 mb-6 w-15">
       <img
         className="w-full"
-        src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-        alt="Sunset in the mountains"
+        src={record?.["Logo of the program"]?.[0]?.thumbnails.large.url}
+        alt="Program image"
       />
 
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">Name of the program</div>
+        <div className="font-bold text-xl mb-2">
+          {record["Name of the program"]}
+        </div>
         <p className="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.
+          {record["What is this program about?"].slice(0, 180).padEnd(183, ".")}
         </p>
       </div>
-      <div className="px-6 pt-4 pb-2">
-        <a href="" className="">
-          Website
-        </a>
-      </div>
+      <span className="bg-gray-100 text-gray-800 text-xs font-medium ml-4 mb-50 px-2.5 py-0.5 rounded inline dark:bg-gray-700 dark:text-gray-300">
+        {record.Name}
+      </span>
     </div>
   );
 }
