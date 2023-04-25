@@ -4,6 +4,7 @@ import Card from "@/components/card";
 const inter = Inter({ subsets: ["latin"] });
 import About from "./about";
 import Link from "next/link";
+import Head from "next/head";
 
 import { useState, useEffect } from "react";
 
